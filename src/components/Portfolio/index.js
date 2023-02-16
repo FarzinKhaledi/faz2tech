@@ -1,47 +1,38 @@
-import React, { useEffect, useState } from 'react';
-import Loader from 'react-loaders';
-import AnimatedLetters from '../AnimatedLetters';
-import './index.scss';
-import { onSnapshot, collection } from 'firebase/firestore';
-import db from '../../firebase';
+import React, { useEffect, useState } from 'react'
+import Loader from 'react-loaders'
+import AnimatedLetters from '../AnimatedLetters'
+import './index.scss'
+import { onSnapshot, collection } from 'firebase/firestore'
+import db from '../../firebase'
 
 const Portfolio = () => {
-  const [letterClass, setLetterClass] = useState('text-animate');
-  const [portfolio, setPortfolio] = useState([]);
+  const [letterClass, setLetterClass] = useState('text-animate')
+  const [portfolio, setPortfolio] = useState([])
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setLetterClass('text-animate-hover');
-    }, 3000);
+      setLetterClass('text-animate-hover')
+    }, 3000)
 
     return () => {
-      clearTimeout(timer);
-    };
-  });
-
-  // useEffect(() => {
-  //     getPortfolio();
-  // }, []);
-
-  // const getPortfolio = async () => {
-  //     const querySnapshot = await getDocs(collection(db, ''));
-  //     setPortfolio(querySnapshot.docs.map((doc) => doc.data()));
-  // }
+      clearTimeout(timer)
+    }
+  })
 
   useEffect(() => {
     const getPortfolio = onSnapshot(
       collection(db, 'projects'),
       (snapShot) => {
-        setPortfolio(snapShot.docs.map((doc) => doc.data()));
+        setPortfolio(snapShot.docs.map((doc) => doc.data()))
       },
       (error) => {
-        throw error;
+        throw error
       }
-    );
+    )
     return () => {
-      getPortfolio();
-    };
-  }, [portfolio]);
+      getPortfolio()
+    }
+  }, [portfolio])
 
   const renderPortfolio = (portfolio) => {
     return (
@@ -58,7 +49,7 @@ const Portfolio = () => {
                 <p className="title">{port.name}</p>
                 <h4 className="description">{port.description}</h4>
                 <button className="btn" onClick={() => window.open(port.url)}>
-                  View Code
+                  Code
                 </button>
                 <button
                   className="btn"
@@ -68,11 +59,11 @@ const Portfolio = () => {
                 </button>
               </div>
             </div>
-          );
+          )
         })}
       </div>
-    );
-  };
+    )
+  }
 
   return (
     <>
@@ -88,7 +79,7 @@ const Portfolio = () => {
       </div>
       <Loader type="pacman" />
     </>
-  );
-};
+  )
+}
 
-export default Portfolio;
+export default Portfolio
