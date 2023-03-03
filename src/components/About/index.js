@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import {
-  faAngular,
+  faGithub,
   faCss3,
   faGitAlt,
   faHtml5,
@@ -33,34 +33,43 @@ const About = () => {
             />
           </h1>
           <p>
-            I'm a very ambitious full stack web developer looking for a role in
-            an established IT company with the opportunity to work with the
-            latest technologies on challenging and diverse projects.
+            Welcome to my portfolio website! As a highly motivated Full StackWeb
+            Developer, I am passionate about crafting exceptional digital
+            experiences that enhance businesses and positively impact end-users.
+            I thrive in challenging and dynamic environments, and I am
+            constantly seeking opportunities to work with the latest
+            technologies on diverse and exciting projects.
           </p>
           <p align="LEFT">
-            I am genuinely passionate about self-development and continuous
-            improvement, this is demonstrated by my determination to commit to
-            learning numerous skills in a variety of areas including software
-            development, sales, online marketing, and investing in further
-            education. My goal is to provide significant value for those I work
-            for. I'm quiet confident, naturally curious, and perpetually working
-            on improving my chops one design and development problem at a time.
+            My journey as a Full Stack Web Developer began with a deep-rooted
+            passion for continuous learning and self-improvement. Over the
+            years, I have honed my skills in software development, sales, online
+            marketing, and education to become a well-rounded professional. My
+            unwavering determination to achieve success is matched only by my
+            commitment to providing significant value to those I work with. With
+            a keen eye for detail and a natural curiosity, I am perpetually
+            working on improving my skills and knowledge one design and
+            development problem at a time.
           </p>
           <p>
-            I consider myself someone who is self-motivated, punctual,
-            conscientious, and importantly determined to see success. I enjoy
-            learning and I am not afraid to make mistakes, indeed I value the
-            opportunity to improve myself through experiences in life both
-            personally and professionally. My top three values are continuous
-            improvement, contribution, and seeing people succeed in life.
-            tech-obsessed!!!
+            My self-motivation, punctuality, and conscientiousness allow me to
+            thrive in any work environment, while my eagerness to learn and
+            embrace challenges fuels my personal and professional growth. My top
+            three values - continuous improvement, contribution, and empowering
+            others to succeed - are integral to everything I do. Whether it's
+            creating innovative digital solutions or supporting my colleagues, I
+            strive to make a positive impact on those around me. If you are
+            looking for a tech-obsessed, dynamic, and dedicated Full Stack Web
+            Developer to help take your project to the next level, then look no
+            further. I am confident that my passion, skills, and values make me
+            the ideal candidate for any challenging project or role.
           </p>
         </div>
 
         <div className="stage-cube-cont">
           <div className="cubespinner">
             <div className="face1">
-              <FontAwesomeIcon icon={faAngular} color="#DD0031" />
+              <FontAwesomeIcon icon={faGithub} color="#DD0031" />
             </div>
             <div className="face2">
               <FontAwesomeIcon icon={faHtml5} color="#F06529" />

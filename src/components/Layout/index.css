@@ -16,7 +16,7 @@
   bottom: 0;
   left: 120px;
   font-size: 18px;
-  font-family: "La Belle Aurore", cursive;
+  font-family: 'La Belle Aurore', cursive;
 }
 
 .bottom-tag-html {
@@ -42,7 +42,7 @@
 .container.about-page h1,
 .container.portfolio-page h1 {
   font-size: 53px;
-  font-family: "Coolvetica";
+  font-family: 'Coolvetica';
   color: #ffd700;
   font-weight: 400;
   margin-top: 0;
@@ -53,8 +53,8 @@
 .container.contact-page h1:before,
 .container.about-page h1:before,
 .container.portfolio-page h1:before {
-  content: "<h1>";
-  font-family: "La Belle Aurore", cursive;
+  content: '<h1>';
+  font-family: 'La Belle Aurore', cursive;
   color: #ffd700;
   font-size: 18px;
   position: absolute;
@@ -66,8 +66,8 @@
 .container.contact-page h1:after,
 .container.about-page h1:after,
 .container.portfolio-page h1:after {
-  content: "<h1/>";
-  font-family: "La Belle Aurore", cursive;
+  content: '<h1/>';
+  font-family: 'La Belle Aurore', cursive;
   color: #ffd700;
   font-size: 18px;
   line-height: 18px;
@@ -108,10 +108,9 @@
   left: 10%;
   top: 50%;
   transform: translateY(-50%);
-  width: 35%;
+  width: 70%;
   vertical-align: middle;
   display: table-cell;
-  max-height: 90%;
 }
 .container.contact-page .text-animate-hover:hover,
 .container.about-page .text-animate-hover:hover,
@@ -128,13 +127,16 @@
     height: auto;
     min-height: 100%;
   }
-  .container.contact-page .text-zone, .container.about-page .text-zone, .container.portfolio-page .text-zone {
+  .container.contact-page .text-zone,
+  .container.about-page .text-zone,
+  .container.portfolio-page .text-zone {
     position: initial;
     transform: none;
     width: 100%;
     display: block;
     padding: 20px;
     box-sizing: border-box;
+    max-height: fit-content;
   }
   .container.portfolio-page {
     width: 100%;
@@ -155,4 +157,4 @@
     height: 0%;
     overflow: visible;
   }
-}/*# sourceMappingURL=index.css.map */
+} /*# sourceMappingURL=index.css.map */

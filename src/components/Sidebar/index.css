@@ -5,7 +5,6 @@
   position: absolute;
   top: 0;
   z-index: 3;
-  min-height: 500px;
 }
 .nav-bar .logo {
   display: block;
@@ -55,7 +54,7 @@
   opacity: 1;
 }
 .nav-bar nav a:after {
-  content: "";
+  content: '';
   font-size: 10px;
   letter-spacing: 2px;
   position: absolute;
@@ -67,16 +66,16 @@
   transition: all 0.3s ease-out;
 }
 .nav-bar nav a:first-child:after {
-  content: "HOME";
+  content: 'HOME';
 }
 .nav-bar nav a.about-link:after {
-  content: "ABOUT";
+  content: 'ABOUT';
 }
 .nav-bar nav a.contact-link:after {
-  content: "CONTACT";
+  content: 'CONTACT';
 }
 .nav-bar nav a.portfolio-link:after {
-  content: "PORTFOLIO";
+  content: 'PORTFOLIO';
 }
 .nav-bar nav a.active svg {
   color: #ffd700;
@@ -169,4 +168,4 @@
     right: 15px;
     display: block;
   }
-}/*# sourceMappingURL=index.css.map */
+} /*# sourceMappingURL=index.css.map */
