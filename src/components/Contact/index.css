@@ -28,8 +28,8 @@
 .contact-form ul li.half:first-child {
   margin-left: 0;
 }
-.contact-form input[type=text],
-.contact-form input[type=email] {
+.contact-form input[type='text'],
+.contact-form input[type='email'] {
   width: 100%;
   border: 0;
   background: #115173;
@@ -69,8 +69,8 @@
 .map-wrap {
   background: rgba(8, 253, 216, 0.1);
   float: right;
-  width: 53%;
-  height: 115%;
+  width: 30%;
+  height: 100%;
   margin-top: -3%;
 }
 
@@ -85,14 +85,14 @@
 
 .info-map {
   position: absolute;
-  background: #000;
+  background: #c5c81d;
   top: 50px;
   right: 30%;
   z-index: 999999;
-  width: 267px;
+  width: 200px;
   padding: 20px;
   color: #fff;
-  font-family: "Helvetica";
+  font-family: 'Helvetica';
   font-size: 17px;
   font-weight: 300;
   opacity: 0;
@@ -116,4 +116,4 @@
   .info-map {
     display: none;
   }
-}/*# sourceMappingURL=index.css.map */
+} /*# sourceMappingURL=index.css.map */

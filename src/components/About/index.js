@@ -33,12 +33,11 @@ const About = () => {
             />
           </h1>
           <p>
-            Welcome to my portfolio website! As a highly motivated Full StackWeb
-            Developer, I am passionate about crafting exceptional digital
-            experiences that enhance businesses and positively impact end-users.
-            I thrive in challenging and dynamic environments, and I am
-            constantly seeking opportunities to work with the latest
-            technologies on diverse and exciting projects.
+            As a highly motivated Full Stack Web Developer,I am passionate about
+            crafting exceptional digital experiences that enhance businesses and
+            positively impact end-users. I thrive in challenging and dynamic
+            environments, and I am constantly seeking opportunities to work with
+            the latest technologies on diverse and exciting projects.
           </p>
           <p align="LEFT">
             My journey as a Full Stack Web Developer began with a deep-rooted
